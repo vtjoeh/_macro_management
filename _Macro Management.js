@@ -1,10 +1,12 @@
 // Macro Management from the Cisco video device touch panel 
 // let author = 'joehughe' + '@' + 'cisco.com' 
-// Github: https://github.com/vtjoeh
+// license: MIT
+// Github: https://github.com/vtjoeh/_macro_management
+
 
 import xapi from 'xapi';
 
-const NAME_MACRO_MANAGEMENT = '_Macro Management'; // Needs to match the macro name in the web page and API.  
+const NAME_MACRO_MANAGEMENT = _main_macro_name(); // Uses RoomOS 11 Quick Js Engine to get name. For older devices (e.g. SX80), change _main_macro_name() to the actual macro name (e.g. '_Macro Management') 
 
 const SORT_ALPHABETICAL = true;
 
@@ -48,7 +50,7 @@ async function updatePanel(macros) {
     <Location>HomeScreenAndCallControls</Location>
     <Icon>Sliders</Icon>
     <Color>#CF7900</Color>
-    <Name>Macros Management</Name>
+    <Name>${PANEL_NAME}</Name>
     <ActivityType>Custom</ActivityType>
       <ActivityType>Custom</ActivityType>
       <Page>
@@ -184,4 +186,4 @@ function listen() {
 
 getMacros();
 
-listen(); 
+listen();
