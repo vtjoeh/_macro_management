@@ -6,7 +6,7 @@
 
 import xapi from 'xapi';
 
-const NAME_MACRO_MANAGEMENT = _main_macro_name(); // Uses RoomOS 11 Quick Js Engine to get name. For older devices (e.g. SX80), change _main_macro_name() to the actual macro name (e.g. '_Macro Management') 
+const NAME_MACRO_MANAGEMENT = _main_macro_name();  
 
 const SORT_ALPHABETICAL = true;
 
