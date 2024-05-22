@@ -6,15 +6,15 @@
 
 import xapi from 'xapi';
 
-const NAME_MACRO_MANAGEMENT = _main_macro_name();  
+const PANEL_NAME = 'Macro Management';  // shows up on touch panel
+
+const PANEL_ORDER = 1; 
 
 const SORT_ALPHABETICAL = true;  // ignores case and sorts alphabetically 
 
 const PANEL_ID = 'panel_id_macro_management'; // ID of the panel created. 
 
-const PANEL_ORDER = 1;
-
-const PANEL_NAME = 'Macro Management'; 
+const NAME_MACRO_MANAGEMENT = _main_macro_name();  
 
 let macros; // Used to store an array of Macro names and state
 
