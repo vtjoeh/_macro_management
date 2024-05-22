@@ -1,5 +1,5 @@
 # _macro_management
-Allows for turning off and on macros from the touch panel for Cisco video devices.  This is mainly helpful for developers who have too many macros running on their devices and forget about it in the middle of a call. 
+Allows for turning off and on macros from the touch panel for Cisco video devices.  This is helpful for developers who have too many macros running on their devices and forget about it in the middle of a call. 
 
 Note: Turning off and on macros restarts the macro engine, just like from the web browser.  
 
