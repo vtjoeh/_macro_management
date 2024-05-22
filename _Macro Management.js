@@ -8,7 +8,7 @@ import xapi from 'xapi';
 
 const NAME_MACRO_MANAGEMENT = _main_macro_name();  
 
-const SORT_ALPHABETICAL = true;
+const SORT_ALPHABETICAL = true;  // ignores case and sorts alphabetically 
 
 const PANEL_ID = 'panel_id_macro_management'; // ID of the panel created. 
 
